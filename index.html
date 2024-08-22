@@ -25,19 +25,25 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Careers</a></li>
         </ul>
       </nav>
       <button>Request Invite</button>
+
+      <div class="burger-menu">
+        <span></span>
+      </div>
+      
     </div>
   </header>
 
   <main>
-    <section class="hero container">
+    <div class="overlay"></div>
+    <section class="hero container" id="home">
       <div class="hero__info">
         <h1>Next generation digital banking</h1>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
@@ -51,7 +57,7 @@
     </section>
 
     <div class="advantages-wrapper">
-      <section class="container advantages">
+      <section class="container advantages" id="about">
         <h2>Why choose Easybank?</h2>
         <p class="advantages__info"> We leverage Open Banking to turn your bank account into your financial hub. Control 
           your finances like never before.
@@ -85,7 +91,7 @@
       </section>
     </div>
 
-    <section class="articles container">
+    <section class="articles container" id="blog">
       <h2>Latest Articles</h2>
       <div class="articles__read">
         <article>
@@ -129,26 +135,26 @@
   </main>
 
   <footer>
-    <section class="footer container">
+    <section class="footer container" id="contact">
       <div class="footer__social">
         <a href=""><img src="./images/footer-logo.svg" alt=""></a>
         <div class="footer__social-link">
-          <a href=""><img src="./images/icon-facebook.svg" alt=""></a>
-          <a href=""><img src="./images/icon-youtube.svg" alt=""></a>
-          <a href=""><img src="./images/icon-twitter.svg" alt=""></a>
-          <a href=""><img src="./images/icon-pinterest.svg" alt=""></a>
-          <a href=""><img src="./images/icon-instagram.svg" alt=""></a>
+          <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+          <a href="#"><img src="./images/icon-youtube.svg" alt=""></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
+          <a href="#"><img src="./images/icon-instagram.svg" alt=""></a>
         </div>
       </div>
       <ul class="footer__nav nav-ul-first">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
       <ul class="footer__nav nav-ul-second">
-        <li><a href="">Careers</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Privacy Policy</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
       <div class="footer__rights">
         <button>Request Invite</button>
@@ -161,5 +167,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Valeriia</a>.
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
