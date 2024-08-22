@@ -1,0 +1,232 @@
+@media (max-width: 1080px) {
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        &__info {
+            text-align: center;
+        }
+
+        &__example {
+            row-gap: 30px;
+            column-gap: 30px;
+            justify-content: center;
+        }
+    }
+
+    .articles {
+        h2 {
+            text-align: center;
+        }
+
+        &__read {
+            row-gap: 30px;
+            column-gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .footer {
+        &__nav {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        nav ul {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+        &__social {
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        &__nav {
+            gap: 20px;
+            align-items: center;
+            padding-left: 0;
+
+            li a {
+                color: $light-grayish-blue;
+            }
+        }
+
+        .nav-ul-first {
+            margin-bottom: 10px;
+        }
+
+        .nav-ul-second {
+            margin-bottom: 30px;
+        }
+
+        &__rights {
+            align-items: center;
+            gap: 25px;
+            margin-left: 0px;
+        }
+    }
+
+    .hero {
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: $very-light-gray;
+
+        &__info {
+            gap: 20px;
+            align-items: center;
+
+            h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p {
+                width: 285px;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        &__image {
+            background: url(../images/bg-intro-desktop.svg) no-repeat top;
+            background-size: cover;
+            padding: 0 15px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+
+
+            img {
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                object-position: bottom;
+                height: 256px;
+                width: 290px;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+
+    main {
+        overflow: hidden;
+    }
+
+    .hero {
+
+        &__image {
+            background: url(../images/bg-intro-mobile.svg) no-repeat top;
+            background-size: cover;
+            padding: 0 15px;
+            margin-bottom: 40px;
+
+            img {
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                object-position: bottom;
+                height: 256px;
+                width: 290px;
+                margin-left: 0;
+            }
+        }
+    }
+    .advantages {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        &__example {
+
+            article {
+                align-items: center;
+                gap: 23px;
+
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .articles {
+        h2 {
+            margin-bottom: 35px;
+        }
+
+        .article-info {
+            &__about {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 10px;
+
+
+    &__info {
+        width: 45%;
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            color: $dark-blue;
+        }
+
+        p {
+            margin-bottom: 8px;
+            width: 450px;
+        }
+    }
+
+    &__image {
+        width: 55%;
+        background: url(../images/bg-intro-desktop.svg) no-repeat bottom left;
+        background-size: 150%;
+        margin: 0;
+        padding: 0;
+
+        img {
+            width: 75%;
+            transform: translate(250px, -10px) scale(1.3);
+            aspect-ratio: unset;
+        }
+    }
+}
+}

@@ -1,0 +1,211 @@
+header {
+    position: relative;
+    z-index: 99;
+    background: $white;
+}
+.header {
+    position: relative;
+    z-index: 99;
+    background: $white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        li a {
+            color: $grayish-blue;
+            transition: all ease-in-out .5s;
+            padding-bottom: 32px;
+        }
+
+        li a:hover {
+            color: $dark-blue;
+            border-bottom: 4px solid $lime-green;
+        }
+    }
+}
+
+.hero {
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            color: $dark-blue;
+        }
+
+        p {
+            margin-bottom: 8px;
+            width: 450px;
+        }
+    }
+}
+
+.advantages-wrapper {
+    background: $light-grayish-blue;
+}
+
+.advantages {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    h2 {
+        font-weight: 400;
+        font-size: 32px;
+        color: $dark-blue;
+        margin-bottom: 33px;
+    }
+
+    &__info {
+        max-width: 645px;
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+    &__example {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 33px;
+            align-items: flex-start;
+            width: 265px;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-weight: 400;
+                color: $dark-blue;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.articles {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-weight: 400;
+        font-size: 32px;
+        color: $dark-blue;
+        margin-bottom: 55px;
+    }
+
+    &__read {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        article {
+            width: 255px;
+            background: $white;
+            border-radius: 30px;
+
+            img {
+                width: 255px;
+                height: 200px;
+            }
+
+            .article-info {
+                padding: 30px 15px 25px 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &__author {
+                    margin-bottom: 3px;
+                    font-size: 14px;
+                }
+
+                h3 a {
+                    font-weight: 400;
+                    color: $dark-blue;
+                    font-size: 18px;
+                    transition: all ease-in-out 1s;
+                    cursor: pointer;
+                }
+
+                h3 a:hover {
+                    color: $lime-green;
+                }
+
+                &__about {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $dark-blue;
+}
+
+.footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &-link {
+            display: flex;
+            gap: 13px;
+        }
+    }
+
+    &__nav {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 130px;
+
+        li a {
+            color: $white;
+            transition: all ease-in-out 1s;
+        }
+
+        li a:hover {
+            color: $lime-green;
+        }
+    }
+
+    &__rights {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+}
